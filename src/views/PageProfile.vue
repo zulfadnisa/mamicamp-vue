@@ -61,7 +61,7 @@ export default {
     }
   },
   created () {
-    this.$store.dispatch('posts/fetchPosts', { ids: this.user.posts })
+    this.$store.dispatch('posts/fetchPosts', { ids: Object.values(this.user.posts) })
       .then(() => this.asyncDataStatus_fetched())
   }
 }
