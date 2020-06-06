@@ -1,0 +1,37 @@
+users :
+    u1 :
+        name
+        key = u1
+        threads :
+            t1
+        posts :
+            p1
+categories :
+    c1 :
+        key = c1
+        name
+        forums :
+            f1
+forums :
+    f1:
+        key
+        name
+        description
+        categoryId
+        threads
+            t1
+threads:
+    t1 :
+        key
+        title
+        publishedAt
+        posts:
+            p1
+        userId
+posts:
+    p1 :
+        key
+        publishedAt
+        userId
+        text
+        threadId
